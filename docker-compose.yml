@@ -3,7 +3,7 @@ version: '3.3'
 
 services:
   runner:
-    image: self-hosted-keras2trt:latest
+    image: github-runner:latest
     build:
       context: .
       args:
