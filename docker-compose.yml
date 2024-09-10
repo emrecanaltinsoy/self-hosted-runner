@@ -1,13 +1,10 @@
----
-version: '3.3'
-
 services:
   runner:
     image: github-runner:latest
     build:
       context: .
       args:
-        RUNNER_VERSION: '2.304.0'
+        RUNNER_VERSION: '2.311.0'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     env_file:
