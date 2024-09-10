@@ -1,6 +1,7 @@
 services:
   runner:
     image: github-runner:latest
+    restart: unless-stopped
     build:
       context: .
       args:
