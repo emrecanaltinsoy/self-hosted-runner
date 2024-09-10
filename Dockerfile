@@ -30,7 +30,7 @@ RUN chown -R docker ~docker && /home/docker/actions-runner/bin/installdependenci
 ADD scripts/entrypoint.sh entrypoint.sh
 
 # make the script executable
-RUN chmod +x entrypoint.sh
+RUN chmod 777 entrypoint.sh
 
 # set the user to "docker" so all subsequent commands are run as the docker user
 USER docker
